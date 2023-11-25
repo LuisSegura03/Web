@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeriNewsGuard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VeriNewsGuard</h1>
+        
+        <div class="form-container">
+            <label for="urlInput">URL de la Noticia:</label>
+            <input type="text" id="urlInput" placeholder="Ingrese la URL">
+            
+            <label for="tokenInput">Contraseña:</label>
+            <input type="password" id="tokenInput" placeholder="Ingrese el Token">
+
+            <button onclick="consultarAPI()">Consultar</button>
+        </div>
+
+        <div id="result" class="result-container"></div>
+
+        <div id="history" class="history-container">
+            <h2>Historial de Consultas</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
